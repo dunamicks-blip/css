@@ -484,7 +484,11 @@
         }
 
         @media (max-width: 680px) {
-            .services,
+            .services {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+
             .process,
             .testimonials,
             .stats,
