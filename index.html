@@ -234,25 +234,26 @@
         }
 
         .services .card {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 48px minmax(0, 1fr);
+            column-gap: 10px;
+            align-items: start;
             align-self: start;
-            justify-content: flex-start;
             text-align: left;
             width: 100%;
         }
 
         .icon {
-            width: 62px;
-            height: 62px;
+            width: 48px;
+            height: 48px;
             display: grid;
             place-items: center;
             border-radius: 18px;
             background: linear-gradient(135deg, var(--primary), var(--primary-2));
             color: #ffffff;
             font-size: 1.8rem;
-            margin-bottom: 12px;
+            margin-bottom: 0;
+            grid-row: span 2;
         }
 
         .card h3 {
