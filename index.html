@@ -231,7 +231,7 @@
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 3px;
-            align-items: start;
+            align-items: stretch;
             justify-items: stretch;
         }
 
@@ -248,9 +248,10 @@
             grid-template-columns: 48px minmax(0, 1fr);
             column-gap: 3px;
             align-items: start;
-            align-self: start;
+            align-self: stretch;
             text-align: left;
             width: 100%;
+            min-height: 190px;
         }
 
         .icon {
