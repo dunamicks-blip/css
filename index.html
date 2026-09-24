@@ -124,9 +124,10 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 4vw, 4.3rem);
+            font-size: clamp(1.8rem, 3vw, 3rem);
             line-height: 1.08;
             margin: 0 0 20px;
+            white-space: nowrap;
         }
 
         .hero p {
@@ -561,6 +562,11 @@
             .cta-row,
             .cta-box {
                 gap: 4px;
+            }
+
+            .hero h1 {
+                white-space: normal;
+                font-size: clamp(1.8rem, 8vw, 2.5rem);
             }
 
             nav {
