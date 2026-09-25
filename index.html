@@ -15,6 +15,8 @@
             --line: #e2e8f0;
             --dark: #020817;
             --success: #22c55e;
+            --font-body: "Segoe UI", Tahoma, sans-serif;
+            --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
         }
 
         * {
@@ -28,11 +30,23 @@
 
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: var(--font-body);
             background: var(--bg);
             color: var(--primary);
             line-height: 1.6;
             overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .brand {
+            font-family: var(--font-display);
+            line-height: 1.15;
+        }
+
+        p {
+            line-height: 1.55;
         }
 
         a {
@@ -69,7 +83,6 @@
             font-size: 1.15rem;
             font-weight: 800;
             letter-spacing: 0.04em;
-            line-height: 1.15;
         }
 
         .brand span {
@@ -125,7 +138,6 @@
 
         .hero h1 {
             font-size: clamp(2.5rem, 4vw, 4.3rem);
-            line-height: 1.08;
             margin: 0 0 20px;
         }
 
